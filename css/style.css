@@ -1,18 +1,82 @@
-*{
-    margin: 2%  auto;
+* {
+    color: hsl(24, 5%, 18%);
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 2% auto;
     padding: 2%;
-    width: 90%;
-    border-radius: 25px;
+    max-width: 1440px;
+
 }
-body{
-    background-color: rgb(248, 237, 225);
-}
-.all{
-     background-color:rgb(250, 250, 248);
-     padding: 1%;
-     align-items: center;
-}
-.picture img{
-    width: 95%;
+
+.all {
+    background-color: hsl(0, 0%, 100%);
+    padding: 5%;
+    margin: 2% auto;
     align-items: center;
+    border-radius: 20px;
+
+}
+
+.picture {
+    width: 100%;
+}
+
+.picture img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.heading h1 {
+    color: hsl(24, 5%, 18%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.heading p{
+    font-size: 18px;
+    padding: 1%;
+    padding-top: 0;
+}
+
+.time{
+    background-color: hsl(330, 100%, 98%) ;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.time h3{
+    color: hsl(332, 51%, 32%);
+    margin-left: 2%;
+    font-size: 22px;
+    
+}
+.time ul li{
+padding: 1%;
+font-size: 18px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+}
+
+
+
+.ingredients ul li{
+    /* color: hsl(14, 45%, 36%); */
+    padding: 1%;
+}
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
