@@ -1,14 +1,15 @@
 * {
-    color: hsl(24, 5%, 18%);
+    color: hsl(30, 10%, 34%);
 }
+
 
 body {
     background-color: hsl(30, 54%, 90%);
     margin: 2% auto;
     padding: 2%;
     max-width: 1440px;
-
 }
+
 
 .all {
     background-color: hsl(0, 0%, 100%);
@@ -16,66 +17,111 @@ body {
     margin: 2% auto;
     align-items: center;
     border-radius: 20px;
-
 }
+
 
 .picture {
     width: 100%;
 }
+
 
 .picture img {
     width: 100%;
     border-radius: 20px;
 }
 
+
 .heading h1 {
     color: hsl(24, 5%, 18%);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    /* font-size: 50px; */
 }
 
-.heading p{
-    font-size: 18px;
+
+.heading p {
+    /* font-size: 18px; */
     padding: 1%;
     padding-top: 0;
 }
 
-.time{
-    background-color: hsl(330, 100%, 98%) ;
+
+.time {
+    background-color: hsl(330, 100%, 98%);
     padding: 1%;
     border-radius: 20px;
 }
 
-.time h3{
+
+.time h3 {
     color: hsl(332, 51%, 32%);
     margin-left: 2%;
-    font-size: 22px;
-    
-}
-.time ul li{
-padding: 1%;
-font-size: 18px;
+    /* font-size: 22px; */
 }
 
-h2{
+
+.time ul li {
+    padding: 1%;
+    /* font-size: 18px; */
+}
+
+
+h2 {
     color: hsl(14, 45%, 36%);
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 
 
+.ingredients {
+    border-bottom: 1px solid #ddd;
+}
 
-.ingredients ul li{
-    /* color: hsl(14, 45%, 36%); */
+
+.ingredients ul li {
     padding: 1%;
 }
 
 
+.ingredients ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+
+.instructions ol li {
+    padding: 1%;
+}
+
+
+.instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+
+.instructions b {
+    color: hsl(24, 5%, 18%);
+}
+
+
+.nutrition-column {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+
+.nutrition-column strong {
+    color: hsl(14, 45%, 36%);
+}
 
 
 .attribution {
+    margin-top: 20px;
     font-size: 11px;
     text-align: center;
 }
+
 
 .attribution a {
     color: hsl(228, 45%, 44%);
