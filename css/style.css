@@ -1,22 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 * {
-    color: hsl(30, 10%, 34%);
+    color: var(--font-clr);
+    font-family: var(--font-outfit);
+}
+
+:root {
+    --body-bg: hsl(30, 54%, 90%);
+    --all-bg: hsl(0, 0%, 100%);
+    --h1-font: hsl(24, 5%, 18%);
+    --time-bg: hsl(330, 100%, 98%);
+    --time-p: hsl(332, 51%, 32%);
+    --h2-font: hsl(14, 45%, 36%);
+    --font-clr: hsl(30, 10%, 34%);
+    --body-bg2: hsl(30, 18%, 87%);
+
+
+    --font-outfit:"outfit", sans-serif;
+    --font-young-serif:"young serif", serif;
 }
 
 body {
-    background-color: hsl(30, 54%, 90%);
+    background-color: var(--body-bg);
     width: 100vw;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 0;
+    padding: 115px 0;
 }
 
 .all {
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--all-bg);
     width: 660px;
-    height: 1660px;
+    height: 1628px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,8 +52,8 @@ body {
 }
 
 .heading h1 {
-    color: hsl(24, 5%, 18%);
-    font-family: 'Times New Roman', Times, serif;
+    color: var(--h1-font);
+    font-family: var(--font-young-serif);
     /* font-size: 50px; */
 }
 
@@ -46,17 +64,21 @@ body {
 }
 
 .time {
-    background-color: hsl(330, 100%, 98%);
+    background-color: var(--time-bg);
     padding: 1%;
     border-radius: 20px;
     width: 100%;
 }
 
 .time p {
-    color: hsl(332, 51%, 32%);
+    color: var(--time-p);
     margin-left: 2%;
     font-size: 18px;
     font-weight: 600;
+}
+
+.time ul li::marker {
+    color: var(--time-p);
 }
 
 .time ul li {
@@ -65,8 +87,9 @@ body {
 }
 
 h2 {
-    color: hsl(14, 45%, 36%);
-    /* font-size: 30px; */
+    font-family: var(--font-young-serif);
+    color: var(--h2-font);
+    font-weight: 400;
 }
 
 .ingredients {
@@ -79,7 +102,7 @@ h2 {
 }
 
 .ingredients ul li::marker {
-    color: hsl(14, 45%, 36%);
+    color: var(--h2-font);
 }
 
 .instructions ol li {
@@ -87,12 +110,12 @@ h2 {
 }
 
 .instructions ol li::marker {
-    color: hsl(14, 45%, 36%);
+    color: var(--h2-font);
     font-weight: bold;
 }
 
 .instructions b {
-    color: hsl(24, 5%, 18%);
+    color: var(--h1-font);
 }
 
 .nutrition-column {
@@ -104,7 +127,7 @@ h2 {
 }
 
 .nutrition-column strong {
-    color: hsl(14, 45%, 36%);
+    color: var(--h2-font);
 }
 
 .attribution {
