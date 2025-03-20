@@ -44,10 +44,11 @@ body {
     border-radius: 20px;
 }
 
-.time h3 {
+.time p {
     color: hsl(332, 51%, 32%);
     margin-left: 2%;
-    /* font-size: 22px; */
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .time ul li {
