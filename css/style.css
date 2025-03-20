@@ -4,16 +4,23 @@
 
 body {
     background-color: hsl(30, 54%, 90%);
-    margin: 2% auto;
-    padding: 2%;
-    max-width: 1440px;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
 }
 
 .all {
     background-color: hsl(0, 0%, 100%);
-    padding: 5%;
-    margin: 2% auto;
+    width: 660px;
+    height: 1660px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    padding: 40px;
     border-radius: 20px;
 }
 
@@ -42,6 +49,7 @@ body {
     background-color: hsl(330, 100%, 98%);
     padding: 1%;
     border-radius: 20px;
+    width: 100%;
 }
 
 .time p {
@@ -63,6 +71,7 @@ h2 {
 
 .ingredients {
     border-bottom: 1px solid #ddd;
+    width: 100%;
 }
 
 .ingredients ul li {
