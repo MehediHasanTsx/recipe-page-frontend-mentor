@@ -16,8 +16,8 @@
     --body-bg2: hsl(30, 18%, 87%);
 
 
-    --font-outfit:"outfit", sans-serif;
-    --font-young-serif:"young serif", serif;
+    --font-outfit: "outfit", sans-serif;
+    --font-young-serif: "young serif", serif;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 .all {
     background-color: var(--all-bg);
     width: 660px;
-    height: 1628px;
+    height: 1650px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,26 +48,31 @@ body {
 
 .picture img {
     width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
 .heading h1 {
-    color: var(--h1-font);
     font-family: var(--font-young-serif);
-    /* font-size: 50px; */
+    color: var(--h1-font);
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 18px;
+
 }
 
 .heading p {
-    /* font-size: 18px; */
-    padding: 1%;
     padding-top: 0;
+    line-height: 25px;
+    padding-bottom: 18px;
 }
 
 .time {
     background-color: var(--time-bg);
-    padding: 1%;
-    border-radius: 20px;
     width: 100%;
+    border-radius: 20px;
+    padding: 1%;
+    padding-bottom: 10px;
 }
 
 .time p {
@@ -83,12 +88,12 @@ body {
 
 .time ul li {
     padding: 1%;
-    /* font-size: 18px; */
 }
 
 h2 {
     font-family: var(--font-young-serif);
     color: var(--h2-font);
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -97,16 +102,42 @@ h2 {
     width: 100%;
 }
 
-.ingredients ul li {
-    padding: 1%;
+.ingredients h2 {
+    margin-bottom: 0px;
+}
+
+.ingredients ul {
+    margin-top: 12px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+
+.ingredients li {
+    padding: 6px;
 }
 
 .ingredients ul li::marker {
     color: var(--h2-font);
 }
 
-.instructions ol li {
-    padding: 1%;
+.instructions {
+    padding-top: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.instructions h2 {
+    margin-bottom: 0px;
+
+}
+
+.instructions ol {
+    margin-top: 14px;
+    padding-bottom: 10px;
+}
+
+.instructions li {
+    padding: 6px;
+    line-height: 22px;
 }
 
 .instructions ol li::marker {
@@ -118,6 +149,16 @@ h2 {
     color: var(--h1-font);
 }
 
+.nutrition {
+    width: 100%;
+    padding-top: 5px;
+
+}
+
+.nutrition h2 {
+    margin-bottom: 20px;
+}
+
 .nutrition-column {
     display: flex;
     justify-content: space-around;
@@ -126,16 +167,26 @@ h2 {
     font-weight: bold;
 }
 
+.nutrition-column:last-child {
+    border-bottom: 0px;
+}
+
+.nutrition-table {
+    padding-bottom: 40px;
+}
+
 .nutrition-column strong {
     color: var(--h2-font);
 }
 
+
 .attribution {
     margin-top: 20px;
-    font-size: 11px;
+    font-size: 14px;
     text-align: center;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
 }
